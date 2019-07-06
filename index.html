@@ -113,7 +113,7 @@
 								data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000"
 								data-splitin="none" data-splitout="none" data-responsive_offset="on"
 								style="z-index: 6; white-space: nowrap;">
-								<h1 style="color:tomato">Spend Less Automate With More</h1>
+								<p style="color:tomato;font-size:180%">Spend Less Automate With More</p>
 							</div>
 
 							<!-- LAYER NR. 2 -->
@@ -126,7 +126,7 @@
 								data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="2000"
 								data-splitin="none" data-splitout="none" data-responsive_offset="on"
 								style="z-index: 6; white-space: nowrap;">
-								<h3 style="color:whitesmoke">The Big Automation RPA On Cloud</h3>
+								<p style="color:whitesmoke;font-size:143%">The Big Automation RPA On Cloud</p>
 							</div>
 
 
@@ -175,9 +175,9 @@
 								data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000"
 								data-splitin="none" data-splitout="none" data-responsive_offset="on"
 								style="z-index: 6; white-space: nowrap;">
-								<h1 style="text-transform: capitalize;font-size: 33px;">automation Platform for the
+								<p style="text-transform: capitalize;font-size: 150%;">automation Platform for the
 									digital enterprise
-									that goes beyond RPA</h1>
+									that goes beyond RPA</p>
 							</div>
 
 							<!-- LAYER NR. 2 -->
@@ -757,31 +757,34 @@
 				<div class="send-message">
 					<h2>Send Message</h2>
 
-					<form action="inc/sendemail.php" class="form-validation" autocomplete="off" method="post">
-						<div class="row">
+					<form class="gform pure-form pure-form-stacked" method="POST" data-email="sahushailesh9@gmail.com"
+					action="https://script.google.com/macros/s/AKfycbzP77q5BOtwEWDR0GHcbDxaKs4KBqebVzbbIz6RPgWLbUuaV8Q/exec">			
+					<div class="row">
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 								<div class="single-input">
-									<input type="text" placeholder="First Name*" name="Fname">
+									<input type="text" placeholder="Name*" name="name">
 								</div> <!-- /.single-input -->
 							</div>
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 								<div class="single-input">
-									<input type="text" placeholder="Last Name*" name="Lname">
+									<input type="text" placeholder="Technology*" name="technology">
 								</div> <!-- /.single-input -->
 							</div>
 							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 								<div class="single-input">
-									<input type="email" placeholder="Your Email*" name="email">
+									<input type="email" placeholder="Email*" name="email">
 								</div> <!-- /.single-input -->
 							</div>
 						</div> <!-- /.row -->
-						<div class="single-input">
-							<input type="text" placeholder="Subject" name="sub">
-						</div> <!-- /.single-input -->
 						<textarea placeholder="Write Message" name="message"></textarea>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<div class="single-input">
+								<input type="hidden" placeholder="Email*" name="title" value="buy">
+							</div> <!-- /.single-input -->
+						</div>
 
-
-						<button class="tran3s p-color-bg">Send Message</button>
+						<button class="button-success pure-button button-xlarge">
+							<i class="fa fa-paper-plane"></i>&nbsp;Send</button>
 					</form>
 
 
@@ -914,6 +917,7 @@
 		<script type="text/javascript" src="js/map-script.js"></script>
 		<script type="text/javascript" src="https://unpkg.com/micromodal/dist/micromodal.min.js
 		"></script>
+		<script type="text/javascript" src="./js/form-submission-handler.js"></script>
 
 
 	</div> <!-- /.main-page-wrapper -->
