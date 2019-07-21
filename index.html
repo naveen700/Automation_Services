@@ -50,28 +50,28 @@
 			-->
         <header class="theme-main-header">
             <div class="container">
-                <a href="index.html" class="logo float-left tran4s" style="font-size: 1.6vmax;
-					color: white;"> The Big Automation</a>
+                <a href="index.html" id="logo" class="logo float-left tran4s"> TheBigAutomation</a>
 
                 <!-- ========================= Theme Feature Page Menu ======================= -->
                 <nav class="navbar float-right theme-main-menu one-page-menu">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" id="menu">
-							<span class="sr-only">Toggle navigation</span>
-							Menu
-							<i class="fa fa-bars" aria-hidden="true"></i>
-						</button>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbar-collapse-1" aria-expanded="false" id="menu">
+                            <span class="sr-only">Toggle navigation</span>
+                            Menu
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </button>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#home">HOME</a></li>
-                            <li><a href="#about-us">ABOUT</a></li>
-                            <li><a href="#service-section">SERVICES</a></li>
-                            <li><a href="#our-client">CLIENTS</a></li>
-                            <li><a href="#blog-section">BLOGS</a></li>
-                            <li><a href="#contact-section">CONTACT</a></li>
+                            <li class="active" onclick="toggleMenuBar()"><a href="#myCarousel">HOME</a></li>
+                            <li onclick="toggleMenuBar()" ><a href="#about-us">ABOUT</a></li>
+                            <li onclick="toggleMenuBar()"><a href="#service-section">SERVICES</a></li>
+                            <li onclick="toggleMenuBar()"> <a href="#our-client">CLIENTS</a></li>
+                            <li onclick="toggleMenuBar()"><a href="#blog-section">Gallery</a></li>
+                            <li onclick="toggleMenuBar()"><a href="#contact-section">CONTACT</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -91,7 +91,6 @@
                 <li data-target="#myCarousel" data-slide-to="3"></li>
                 <li data-target="#myCarousel" data-slide-to="4"></li>
                 <li data-target="#myCarousel" data-slide-to="5"></li>
-                <li data-target="#myCarousel" data-slide-to="6"></li>
             </ol>
 
             <!-- Wrapper for slides -->
@@ -105,19 +104,14 @@
                         <a href=""></a>
                     </div>
                 </div>
-
                 <div class="item">
-                    <img src="images/header/img2.jpg" alt="Chicago" style="width:100%;" class="cover">
+                    <img src="./images/header/img2.jpeg" alt="New york" style="width:100%;" class="cover">
                     <div class="carousel-caption">
-                        <h3>A Virtual Chief Technology Officer, an outsourced, off-site IT manager, solves the issues and more every day</h3>
-                        <a href="#service-section" class="project-button hvr-bounce-to-right">See Services</a>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="images/header/img3.jpg" alt="New york" style="width:100%;" class="cover">
-                    <div class="carousel-caption">
-                        <h3>Build the perfect custom bot and grow your business faster. Marketing Automation. Targeted Live Chat. Integrated platform. Personalized Onboarding</h3>
+                        <h3>Build the perfect custom bot and grow your business faster.</h3>
+                        <h4 class="tomato">
+                            Marketing Automation. Targeted
+                            Live Chat.
+                        </h4>
                     </div>
 
 
@@ -126,7 +120,11 @@
                 <div class="item">
                     <img src="images/header/img4.png" alt="New york" style="width:100%;" class="cover">
                     <div class="carousel-caption">
-                        <h3> Analytics gives you the tools you need to better understand your customers.</h3>
+                        <h3 style="color:black"> Analytics gives you the tools </h3>
+                        <h4 style="color: white;">
+                            To better understand your customers.
+
+                        </h4>
                     </div>
 
 
@@ -135,7 +133,8 @@
                 <div class="item">
                     <img src="images/header/img5.jpg" alt="New york" style="width:100%;" class="cover">
                     <div class="carousel-caption">
-                        <h3> Only unified solution recoginized By the gartner in market guide for RPA and it's Process Automation
+                        <h3> Only unified solution recoginized By the gartner in market guide for RPA and it's Process
+                            Automation
                         </h3>
                     </div>
 
@@ -173,14 +172,14 @@
 
         <div class="row">
             <div class="col-offset-6 brochure">
-                <a class="face-button" href="#">
+                <a class="face-button" href="#" download="">
 
                     <div class="face-primary">
                         <span class="icon fa fa-cloud"></span> Download BROCHURE
                     </div>
 
                     <div class="face-secondary">
-                        <span class="icon fa fa-hdd-o"></span> Size: 52 kt
+                        <span class="icon fa fa-hdd-o"></span> Size: 284 KB
                     </div>
 
                 </a>
@@ -199,19 +198,34 @@
             <div class="container">
                 <div class="theme-title">
                     <h2 style="text-transform: uppercase">about us</h2>
-                    <p>The Big Automation is a niche Technology Solutions Provider, offering a broad range of smart services and solutions in Application Development, System Integration, Cloud Consulting and Managed Services. We specialize in building computing
-                        systems for enterprise clients using the best of cloud, mobile, and responsive web technologies. Our core strength is our team of competent and experienced professionals, who go above and beyond to deliver top quality work product.
-                        OUR </p>
+                    <p align="left">Now-a-days, with the help of technology, Processes can be automated as per their
+                        prescribed
+                        set of rules and steps. Once done, performing these activities is easy, error-free and
+                        effective. You can build such system to function over the internet, which gives you additional
+                        benefit to track your operations while you are on move (like you handle your e-mails today).
+                        <br> <br>
+                        <span id="why-section"> Why do you need an expert like us?</span>
+                        <br>
+                        Using the services of a consultant well‐versed in facilitating discovery sessions, process
+                        automation, business process mapping and documentation will save you time and money when
+                        launching your automation program. Working with a professional in this area will also allow you
+                        to gain the knowledge, methodology, training and experience you need to perform future process
+                        automation projects. Once you learn the methodology and how to break apart a process into
+                        discrete steps, you’ll be prepared to conduct process mapping on your own.
+                        <br><br>
                 </div>
                 <!-- /.theme-title -->
 
                 <div class="row">
-                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
-                    <div class="col-lg-8 col-md-8 col-sm-8">
-                        <img style="padding: 10px;margin-left:  8%;" src="https://automationedge.com/wp-content/uploads/2018/05/Intelligent-RPA-SolutionImage.png" width="816" height="408" alt="" title="" class="img-responsive wp-image-3857" srcset="https://automationedge.com/wp-content/uploads/2018/05/Intelligent-RPA-SolutionImage-200x100.png 200w, https://automationedge.com/wp-content/uploads/2018/05/Intelligent-RPA-SolutionImage-400x200.png 400w, https://automationedge.com/wp-content/uploads/2018/05/Intelligent-RPA-SolutionImage-600x300.png 600w, https://automationedge.com/wp-content/uploads/2018/05/Intelligent-RPA-SolutionImage-800x400.png 800w, https://automationedge.com/wp-content/uploads/2018/05/Intelligent-RPA-SolutionImage.png 816w"
+                    <div class="col-lg-2 col-md-2 "></div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <img style=""
+                            src="https://automationedge.com/wp-content/uploads/2018/05/Intelligent-RPA-SolutionImage.png"
+                            width="816" height="408" alt="" title="" class="img-responsive wp-image-3857"
+                            srcset="https://automationedge.com/wp-content/uploads/2018/05/Intelligent-RPA-SolutionImage-200x100.png 200w, https://automationedge.com/wp-content/uploads/2018/05/Intelligent-RPA-SolutionImage-400x200.png 400w, https://automationedge.com/wp-content/uploads/2018/05/Intelligent-RPA-SolutionImage-600x300.png 600w, https://automationedge.com/wp-content/uploads/2018/05/Intelligent-RPA-SolutionImage-800x400.png 800w, https://automationedge.com/wp-content/uploads/2018/05/Intelligent-RPA-SolutionImage.png 816w"
                             sizes="(max-width: 800px) 100vw, 816px">
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3"></div>
+                    <div class="col-lg-2 col-md-2 "></div>
 
 
                     <!-- <div class="col-lg-3 col-md-3 col-sm-6">
@@ -284,7 +298,7 @@
                 <h3 style="text-transform: capitalize">We Can automate anything.</h3>
                 <a href="#service-section" class="hvr-bounce-to-right">I want to Buy Technology</a>
                 <a class="hvr-bounce-to-right" id="sell" style="color:white;">I want to sell
-					Technology</a>
+                    Technology</a>
             </div>
             <!-- /.opacity -->
         </div>
@@ -307,14 +321,16 @@
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="single-service-content">
                             <div class="icon-heading tran3s">
-                                <div class="icon tran3s"><img src="https://automationedge.com/wp-content/uploads/2017/07/MachineLearning.png">
+                                <div class="icon tran3s"><img
+                                        src="https://automationedge.com/wp-content/uploads/2017/07/MachineLearning.png">
                                 </div>
                                 <h6><a href="#" class="tran3s">Machine Learning</a></h6>
                             </div>
-                            <p> <a onclick="javascript:showFormModal('machineLearning')">One can build and deploy machine learning data models as a part of RPA and IT automation
-								workflow. the
-								box plugins that allow you integrate machine learning scripts and many more which
-								Business can use.  </a> </p>
+                            <p> <a onclick="javascript:showFormModal('machineLearning')">One can build and deploy
+                                    machine learning data models as a part of RPA and IT automation
+                                    workflow. the
+                                    box plugins that allow you integrate machine learning scripts and many more which
+                                    Business can use. </a> </p>
                         </div>
                         <!-- /.single-service-content -->
                     </div>
@@ -323,11 +339,15 @@
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="single-service-content">
                             <div class="icon-heading tran3s">
-                                <div class="icon tran3s"><img src="https://automationedge.com/wp-content/uploads/2017/07/chatbot.png" alt="">
+                                <div class="icon tran3s"><img
+                                        src="https://automationedge.com/wp-content/uploads/2017/07/chatbot.png" alt="">
                                 </div>
                                 <h6><a href="#" class="tran3s">Chatbot And NLP</a></h6>
                             </div>
-                            <p> <a onclick="javascript:showFormModal('chatbot')"> One can get seamless integration between enterprise chat applications. Chatbots can be used for various purposes like Password Reset, FAQs, raising service requests & incidents and many more to use.</a>                                </p>
+                            <p> <a onclick="javascript:showFormModal('chatbot')"> One can get seamless integration
+                                    between enterprise chat applications. Chatbots can be used for various purposes like
+                                    Password Reset, FAQs, raising service requests & incidents and many more to use.</a>
+                            </p>
                         </div>
                         <!-- /.single-service-content -->
                     </div>
@@ -336,12 +356,17 @@
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="single-service-content">
                             <div class="icon-heading tran3s">
-                                <div class="icon tran3s"><img src="https://automationedge.com/wp-content/uploads/2018/04/NOC-and-Event-Resolution-Automation.png" style="width: 81%;margin-left: 1vw;">
+                                <div class="icon tran3s"><img
+                                        src="https://automationedge.com/wp-content/uploads/2018/04/NOC-and-Event-Resolution-Automation.png"
+                                        style="width: 81%;margin-left: 1vw;">
                                 </div>
                                 <h6><a href="#" class="tran3s">Business Process Automation
-									</a></h6>
+                                    </a></h6>
                             </div>
-                            <p><a onclick="javascript:showFormModal('BPA')">BPAs can be implemented in business areas including marketing, sales and workflow. there is an increasing trend towards the use of artificial intelligence technologies that can understand natural language </a>                                </p>
+                            <p><a onclick="javascript:showFormModal('BPA')">BPAs can be implemented in business areas
+                                    including marketing, sales and workflow. there is an increasing trend towards the
+                                    use of artificial intelligence technologies that can understand natural language
+                                </a> </p>
                         </div>
                         <!-- /.single-service-content -->
                     </div>
@@ -350,10 +375,14 @@
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="single-service-content">
                             <div class="icon-heading tran3s">
-                                <div class="icon tran3s"><img src="https://automationedge.com/wp-content/uploads/2017/12/7.png"></div>
+                                <div class="icon tran3s"><img
+                                        src="https://automationedge.com/wp-content/uploads/2017/12/7.png"></div>
                                 <h6><a href="#" class="tran3s">ERP Implementatin and Support</a></h6>
                             </div>
-                            <p> <a onclick="javascript:showFormModal('ERP')"> An ERP implementation involves installing the software, moving your financial data over to the new system, configuring your users and processes, and training your users on the software and provide support for it . </a>                                </p>
+                            <p> <a onclick="javascript:showFormModal('ERP')"> An ERP implementation involves installing
+                                    the software, moving your financial data over to the new system, configuring your
+                                    users and processes, and training your users on the software and provide support for
+                                    it . </a> </p>
                         </div>
                         <!-- /.single-service-content -->
                     </div>
@@ -362,10 +391,14 @@
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="single-service-content">
                             <div class="icon-heading tran3s">
-                                <div class="icon tran3s"><img src="https://automationedge.com/wp-content/uploads/2017/12/6.png"></div>
+                                <div class="icon tran3s"><img
+                                        src="https://automationedge.com/wp-content/uploads/2017/12/6.png"></div>
                                 <h6><a href="#" class="tran3s">Analytics</a></h6>
                             </div>
-                            <p> <a onclick="javascript:showFormModal('Analytics')">  Google Analytics offers insight into the data for human decision making.For Google Analytics you can automate data extraction and reporting analytics enables you to connect Google Analytics with any application.  </a></p>
+                            <p> <a onclick="javascript:showFormModal('Analytics')"> Google Analytics offers insight into
+                                    the data for human decision making.For Google Analytics you can automate data
+                                    extraction and reporting analytics enables you to connect Google Analytics with any
+                                    application. </a></p>
                         </div>
                         <!-- /.single-service-content -->
                     </div>
@@ -374,11 +407,15 @@
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="single-service-content">
                             <div class="icon-heading tran3s">
-                                <div class="icon tran3s"><img src="https://automationedge.com/wp-content/uploads/2017/12/5-1.png"></div>
+                                <div class="icon tran3s"><img
+                                        src="https://automationedge.com/wp-content/uploads/2017/12/5-1.png"></div>
                                 <h6><a href="#" class="tran3s">Virtual CTO </a></h6>
                             </div>
-                            <p> <a onclick="javascript:showFormModal('virtualCTO')">   Virtual CTO is actually a consulting service provided by some service providers that fulfills the exact role of a CTO when required for any size of a business at very competitive prices This is an ideal service for any SMB.
-                            </a> </p>
+                            <p> <a onclick="javascript:showFormModal('virtualCTO')"> Virtual CTO is actually a
+                                    consulting service provided by some service providers that fulfills the exact role
+                                    of a CTO when required for any size of a business at very competitive prices This is
+                                    an ideal service for any SMB.
+                                </a> </p>
                         </div>
                         <!-- /.single-service-content -->
                     </div>
@@ -387,10 +424,15 @@
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="single-service-content">
                             <div class="icon-heading tran3s">
-                                <div class="icon tran3s"><img src="https://automationedge.com/wp-content/uploads/2017/12/5-1.png" style="width: 81%;margin-left: 2vw;"></div>
+                                <div class="icon tran3s"><img
+                                        src="https://automationedge.com/wp-content/uploads/2017/12/5-1.png"
+                                        style="width: 81%;margin-left: 2vw;"></div>
                                 <h6><a href="#" class="tran3s">Corporate Training </a></h6>
                             </div>
-                            <p> <a onclick="javascript:showFormModal('corporateTraining')">     The primary role of corporate training is to ensure an employee has the knowledge and skills to undertake a specific operation to enable an organisation can continue to operate </a>                                </p>
+                            <p> <a onclick="javascript:showFormModal('corporateTraining')"> The primary role of
+                                    corporate training is to ensure an employee has the knowledge and skills to
+                                    undertake a specific operation to enable an organisation can continue to operate
+                                </a> </p>
                         </div>
                         <!-- /.single-service-content -->
                     </div>
@@ -421,7 +463,9 @@
                         </div>
                         <div class="contact">
                             <h3>Email Us</h3>
-                            <form id="service-form" class="form-validation"  method="POST" data-email="info@thebigautomation.com" action="https://script.google.com/macros/s/AKfycbzP77q5BOtwEWDR0GHcbDxaKs4KBqebVzbbIz6RPgWLbUuaV8Q/exec">
+                            <form id="service-form" class="form-validation" method="POST"
+                                data-email="info@thebigautomation.com"
+                                action="https://script.google.com/macros/s/AKfycbzP77q5BOtwEWDR0GHcbDxaKs4KBqebVzbbIz6RPgWLbUuaV8Q/exec">
                                 <p>
                                     <label for="#">Name</label>
                                     <input type="text" name="name" required>
@@ -446,7 +490,7 @@
                                     <textarea name="message" cols="30" rows="5" required></textarea>
                                 </p>
                                 <p class="full">
-                                    <button class="button-success pure-button button-xlarge" >Submit</button>
+                                    <button class="button-success pure-button button-xlarge">Submit</button>
                                 </p>
                             </form>
                         </div>
@@ -465,15 +509,25 @@
                 <div class="container1">
                     <div class="section animated bounceInLeft">
                         <div class="brandname2">
-                            <img src="./images/header/img7.jpg" id="service-img" alt="" class="img img-responsive img-thumbnail formcover">
-                            <div class="wrapper">
+                            <img src="./images/header/img7.jpg" id="service-img" alt=""
+                                class="img img-responsive img-thumbnail formcover">
+                            <div class="wrapper" id="content">
                                 <div class="scrollbar" id="style-10">
                                     <div class="force-overflow">
-                                        <p id="service-text">
-                                            Machine learing is a part of Artificial Intelligence which is continously adapted by the bigger companies to grow their Business they are ready for this Are You? Machine learning is an application of artificial intelligence (AI) that provides systems
-                                            the ability to automatically learn and improve from experience without being explicitly programmed. Machine learning focuses on the development of computer programs that can access data and use it learn for
-                                            themselves. The process of learning begins with observations or data, such as examples, direct experience, or instruction, in order to look for patterns in data and make better decisions in the future based
-                                            on the examples that we provide. The primary aim is to allow the computers learn automatically without human intervention or assistance and adjust actions accordingly.
+                                        <p id="service-text" align="left">
+                                            Machine learing is a part of Artificial Intelligence which is continously
+                                            adapted by the bigger companies to grow their Business they are ready for
+                                            this Are You? Machine learning is an application of artificial intelligence
+                                            (AI) that provides systems
+                                            the ability to automatically learn and improve from experience without being
+                                            explicitly programmed. Machine learning focuses on the development of
+                                            computer programs that can access data and use it learn for
+                                            themselves. The process of learning begins with observations or data, such
+                                            as examples, direct experience, or instruction, in order to look for
+                                            patterns in data and make better decisions in the future based
+                                            on the examples that we provide. The primary aim is to allow the computers
+                                            learn automatically without human intervention or assistance and adjust
+                                            actions accordingly.
                                         </p>
 
                                     </div>
@@ -486,7 +540,9 @@
                         </div>
                         <div class="contact">
                             <h3>Email Us</h3>
-                            <form method="POST" class="form-validation"  id="service-form2" data-email="info@thebigautomation.com" action="https://script.google.com/macros/s/AKfycbzP77q5BOtwEWDR0GHcbDxaKs4KBqebVzbbIz6RPgWLbUuaV8Q/exec">
+                            <form method="POST" class="form-validation" id="service-form2"
+                                data-email="info@thebigautomation.com"
+                                action="https://script.google.com/macros/s/AKfycbzP77q5BOtwEWDR0GHcbDxaKs4KBqebVzbbIz6RPgWLbUuaV8Q/exec">
                                 <p>
                                     <label for="#">Name</label>
                                     <input type="text" name="name" required>
@@ -511,7 +567,7 @@
                                     <textarea name="message" cols="30" rows="5"></textarea>
                                 </p>
                                 <p class="full">
-                                    <button  class="button-success pure-button button-xlarge">Submit</button>
+                                    <button class="button-success pure-button button-xlarge">Submit</button>
                                 </p>
                             </form>
                         </div>
@@ -537,7 +593,9 @@
             <div class="container">
                 <div class="theme-title">
                     <h2>OUR HAPPY CLIENTS</h2>
-                    <p>Our AI and Automation services help businesses solve complex problems across IT and operations with increased AI sophistication. We can partner with you through consulting, enable businesses and IT to rethink and deliver value at scale.
+                    <p>Our AI and Automation services help businesses solve complex problems across IT and operations
+                        with increased AI sophistication. We can partner with you through consulting, enable businesses
+                        and IT to rethink and deliver value at scale.
                     </p>
                 </div>
                 <!-- /.theme-title -->
@@ -545,19 +603,23 @@
                 <div class="client-slider">
                     <div class="item">
                         <img src="images/home/c1.jpg" alt="Client">
-                        <p>I was surprised by how much the software cost – in a good way. The number of things you can do is impressive compared to its competitors, especially for the price, and I think that’s a massive plus for Automation Anywhere.</p>
+                        <p>I was surprised by how much the software cost – in a good way. The number of things you can
+                            do is impressive compared to its competitors, especially for the price, and I think that’s a
+                            massive plus for Automation Anywhere.</p>
                         <h6>- Shruti Jain -</h6>
                     </div>
                     <!-- /.item -->
                     <div class="item">
                         <img src="images/home/c2.jpg" alt="Client">
-                        <p>Automation is very much needed for this period of time and TheBigAutomation can handle these tasks very well</p>
+                        <p>Automation is very much needed for this period of time and TheBigAutomation can handle these
+                            tasks very well</p>
                         <h6>- Renu Aggarwal -</h6>
                     </div>
                     <!-- /.item -->
                     <div class="item">
                         <img src="images/home/c3.jpg" alt="Client">
-                        <p>With good deliverance and customer support ,theBigAutomation provides products and services with Excellence. </p>
+                        <p>With good deliverance and customer support ,theBigAutomation provides products and services
+                            with Excellence. </p>
                         <h6>- Arun kumar-</h6>
                     </div>
                     <!-- /.item -->
@@ -577,69 +639,35 @@
 			-->
         <div id="blog-section">
             <div class="container">
-                <div class="theme-title">
-                    <h2>OUR LATEST Blog</h2>
+                <div class="theme-title" style="    color: red;
+                font-weight: bolder;
+                text-shadow: 0 0 3px white;">
+                    <h2>OUR LATEST VIDEO</h2>
                 </div>
                 <!-- /.theme-title -->
 
                 <div class="clear-fix">
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-lg-1 col-md-2">
                         <div class="single-news-item">
-                            <div class="img"><img src="images/blog/1.jpg" alt="Image">
-                                <a href="#" class="opacity tran4s"><i class="fa fa-link" aria-hidden="true"></i></a>
-                            </div>
-                            <!-- /.img -->
 
-                            <div class="post">
-                                <h6><a href="#" class="tran3s">Smart Manufacturing Apps: Building for the Cloud,
-										Deploying Anywhere</a>
-                                </h6>
-                                <a href="#">Posted by <span class="p-color">admin</span> at 04 Feb, 2017</a>
-                                <p>Docker containers are a natural fit when deploying to the cloud. Major service providers have platforms targeted at running applications deployed in this manner in a controlled and definable fashion. They provide services
-                                    to define and deploy application stacks through declarative code.... <a href="#" class="tran3s">Read More</a></p>
-                            </div>
                             <!-- /.post -->
                         </div>
                         <!-- /.single-news-item -->
                     </div>
                     <!-- /.col- -->
 
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                         <div class="single-news-item">
-                            <div class="img"><img src="images/blog/2.jpg" alt="Image">
-                                <a href="#" class="opacity tran4s"><i class="fa fa-link" aria-hidden="true"></i></a>
-                            </div>
-                            <!-- /.img -->
-
-                            <div class="post">
-                                <h6><a href="#" class="tran3s">A Practical Approach to Creating Internal Cybersecurity
-										Practices</a>
-                                </h6>
-                                <a href="#">Posted by <span class="p-color">admin</span> at 04 Feb, 2017</a>
-                                <p>The first step is to identify what needs to be protected. Referred to in the cybersecurity world as assets, they can be individual systems, entire processes, intellectual property, or even the employees and facilities of
-                                    the organization. Based on the list of assets identified, a classification of importance must be assigned... <a href="#" class="tran3s">Read More</a></p>
-                            </div>
-                            <!-- /.post -->
+                            <span id="video-section"
+                                class="wistia_embed wistia_async_vn63f52q6e popover=true popoverAnimateThumbnail=true"
+                                style="display:inline-block;height:23vw;position:relative;width:56vw">&nbsp;</span>
                         </div>
                         <!-- /.single-news-item -->
                     </div>
                     <!-- /.col- -->
 
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-news-item">
-                            <div class="img"><img src="images/blog/iot1.png" alt="Image">
-                                <a href="#" class="opacity tran4s"><i class="fa fa-link" aria-hidden="true"></i></a>
-                            </div>
-                            <!-- /.img -->
+                    <div class="col-lg-2 col-md-2">
 
-                            <div class="post">
-                                <h6><a href="#" class="tran3s">IoT Impacts</a></h6>
-                                <a href="#">Posted by <span class="p-color">admin</span> at 04 Feb, 2017</a>
-                                <p>The Internet of Things (IoT) has had a major impact on the manufacturing industry. The inter-reliability of sensors, equipment, machines, lines, processing units, plants, materials, containers, transportation, buildings,
-                                    computers, software, cloud technology, mobile devices, people, departments, companies, and processes is helping achieve innovative results, and drive value in manufacturing.... <a href="#" class="tran3s">Read More</a></p>
-                            </div>
-                            <!-- /.post -->
-                        </div>
                         <!-- /.single-news-item -->
                     </div>
                     <!-- /.col- -->
@@ -688,18 +716,21 @@
                             <h2>Contact Info</h2>
                             <ul>
                                 <li>
-                                    <div class="icon tran3s round-border p-color-bg"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <div class="icon tran3s round-border p-color-bg"><i class="fa fa-map-marker"
+                                            aria-hidden="true"></i>
                                     </div>
                                     <h6>Address</h6>
                                     <p>31 Block connaught place ,New Delhi</p>
                                 </li>
                                 <li>
-                                    <div class="icon tran3s round-border p-color-bg"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                                    <div class="icon tran3s round-border p-color-bg"><i class="fa fa-phone"
+                                            aria-hidden="true"></i></div>
                                     <h6>Phone</h6>
                                     <p> +91 9899266609 </p>
                                 </li>
                                 <li>
-                                    <div class="icon tran3s round-border p-color-bg"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    <div class="icon tran3s round-border p-color-bg"><i class="fa fa-envelope-o"
+                                            aria-hidden="true"></i>
                                     </div>
                                     <h6>Email</h6>
                                     <p>info@thebigAutomation.com</p>
@@ -718,7 +749,9 @@
                 <div class="send-message">
                     <h2>Send Message</h2>
 
-                    <form class="gform pure-form pure-form-stacked form-validation" method="POST" data-email="info@thebigautomation.com" action="https://script.google.com/macros/s/AKfycbzP77q5BOtwEWDR0GHcbDxaKs4KBqebVzbbIz6RPgWLbUuaV8Q/exec">
+                    <form class="gform pure-form pure-form-stacked form-validation" method="POST"
+                        data-email="info@thebigautomation.com"
+                        action="https://script.google.com/macros/s/AKfycbzP77q5BOtwEWDR0GHcbDxaKs4KBqebVzbbIz6RPgWLbUuaV8Q/exec">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                 <div class="single-input">
@@ -741,7 +774,7 @@
                         </div>
                         <!-- /.row -->
                         <textarea placeholder="Write Message" name="message"></textarea>
-                        
+
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                             <div class="single-input">
                                 <input type="hidden" name="title" value="buy">
@@ -750,7 +783,7 @@
                         </div>
 
                         <button class="button-success pure-button button-xlarge tran3s p-color-bg">
-							<i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+                            <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
                     </form>
 
 
@@ -792,20 +825,16 @@
                 <!-- <a href="index.html" class="logo"><img src="images/logo/logo.png" alt="Logo"></a> -->
 
                 <ul>
-                    <li><a href="" class="tran3s round-border"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <li><a href="https://www.facebook.com/TheBigAutomation/"  target="_blank"class="tran3s round-border"><i class="fa fa-facebook"  aria-hidden="true"></i></a>
                     </li>
-                    <li><a href="" class="tran3s round-border"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="" class="tran3s round-border"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                    <li><a href="https://twitter.com/infothebigauto1"  target="_blank" class="tran3s round-border"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.pinterest.com/0r3s1p4ufwk9q473x0fi6zcrbug97w/" target="_blank" class="tran3s round-border"><i class="fa fa-pinterest"  aria-hidden="true"></i></a>
                     </li>
-                    <li><a href="" class="tran3s round-border"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <li><a href="https://www.linkedin.com/in/the-big-automation-a94b7618b" target="_blank" class="tran3s round-border"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     </li>
-                    <li><a href="" class="tran3s round-border"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                    <li><a href="" class="tran3s round-border"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
-                    <li><a href="" class="tran3s round-border"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                    </li>
-                    <li><a href="" class="tran3s round-border"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
                 </ul>
-                <p>Copyright @2018 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+                <p>Copyright @2018 All rights reserved | This template is made with <i class="fa fa-heart-o"
+                        aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
             </div>
         </footer>
 
@@ -828,8 +857,8 @@
 
         <!-- Scroll Top Button -->
         <button class="scroll-top tran3s p-color-bg">
-			<i class="fa fa-chevron-up" aria-hidden="true"></i>
-		</button>
+            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        </button>
 
 
 
@@ -887,10 +916,10 @@
         <script type="text/javascript" src="https://unpkg.com/micromodal/dist/micromodal.min.js
 		"></script>
         <script type="text/javascript" src="./js/form-submission-handler.js"></script>
-
-
-        </div>
-        <!-- /.main-page-wrapper -->
+        <script src="https://fast.wistia.com/embed/medias/vn63f52q6e.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+    </div>
+    <!-- /.main-page-wrapper -->
 </body>
 
 </html>

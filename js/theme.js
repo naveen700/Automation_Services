@@ -433,3 +433,7 @@ function showFormModal(service) {
     }
 
 }
+
+function toggleMenuBar(){
+    document.getElementById('navbar-collapse-1').classList.remove('in');
+}
