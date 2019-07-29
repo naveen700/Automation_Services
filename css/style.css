@@ -2385,3 +2385,7 @@ ul {
     margin-bottom: 10px !important;
 }
 
+.text-highlight{
+    background: rgba(0, 0, 0, .59);
+    border-radius: 10px 10px;
+}
